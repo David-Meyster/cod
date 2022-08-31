@@ -86,17 +86,17 @@ $list_skins = [
         <img class="case_img" src="/cases_img/assemblies_cases/knife_case.png" alt="knife_case">
         <form action="/case/knife_case.php" method="get"  class="factor_case">
             <div class="factor_align">
-                <input value="1" id="1x" name="factor" type="radio">
+                <input class="radio-button-amount" value="1" id="1x" name="factor" type="radio">
                 <label style="--i:1s" class="factor_label" for="1x">1x</label>
-                <input value="2" id="2x" name="factor" type="radio">
+                <input class="radio-button-amount" value="2" id="2x" name="factor" type="radio">
                 <label style="--i:2s" class="factor_label" for="2x">2x</label>
-                <input value="3" id="3x" name="factor" type="radio">
+                <input class="radio-button-amount" value="3" id="3x" name="factor" type="radio">
                 <label style="--i:3s" class="factor_label" for="3x">3x</label>
-                <input value="4" id="4x" name="factor" type="radio">
+                <input class="radio-button-amount" value="4" id="4x" name="factor" type="radio">
                 <label style="--i:4s" class="factor_label" for="4x">4x</label>
-                <input value="5" id="5x" name="factor" type="radio">
+                <input class="radio-button-amount" value="5" id="5x" name="factor" type="radio">
                 <label style="--i:5s" class="factor_label" for="5x">5x</label>
-                <input value="10" id="10x" name="factor" type="radio">
+                <input class="radio-button-amount" value="10" id="10x" name="factor" type="radio">
                 <label style="--i:6s" class="factor_label" for="10x">10x</label>
             </div>
             <audio id="case_opening" src="/sound/case_opening.mp3" type="audio/mp3"></audio>
