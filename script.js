@@ -5,9 +5,30 @@ function endTap() {
 
 }
 
+
+
+const getAmount = () => {
+  const amountRadionButtonSelector = '.radio-button-amount'
+  const $elemList = document.querySelectorAll(amountRadionButtonSelector)
+
+  let amount = null
+
+  for (let i = 0; i < $elemList.length; i++) {
+    if ($elemList[i].checked) {
+      return $elemList[i].value
+    }
+  }
+
+  return amount
+}
+
+
+
 function tapButton() {
   let song = document.getElementById("case_opening");
   song.volume = 1;
+
+  console.log(getAmount() ??  'Кнопка не нажата')
 
   song.play();
   let roulette_box = document.getElementById("roulette_box");
